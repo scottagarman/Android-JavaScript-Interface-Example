@@ -1,0 +1,19 @@
+#ignore file
+#
+#
+
+# osx n0ize
+.DS_Store
+profile
+
+#windows n0ize
+*~
+Thumbs.db
+
+# old skool
+.svn
+
+#other
+build/
+bin/
+gen/
