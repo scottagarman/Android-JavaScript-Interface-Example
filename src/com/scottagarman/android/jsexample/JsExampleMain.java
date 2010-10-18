@@ -22,14 +22,16 @@ public class JsExampleMain extends Activity {
         wv.getSettings().setJavaScriptEnabled(true);
         
         //add interface
-        wv.addJavascriptInterface(jsInterface, "android");
+        wv.addJavascriptInterface(jsInterface, "android");//android is the keyword that will be exposed in js
         
         //load file
         wv.loadUrl("file:///android_asset/test.html");
     }
     
-    //interface
+    //javascript interface
     private class JsInterface{
+    	//function that will be called from assets/test.js
+    	//js example: android.log('my message');
     	public void log(String msg){
     		Log.d("MSG FROM JAVASCRIPT", msg);
     	}
