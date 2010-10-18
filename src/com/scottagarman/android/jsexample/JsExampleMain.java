@@ -26,12 +26,6 @@ public class JsExampleMain extends Activity {
         
         //load file
         wv.loadUrl("file:///android_asset/test.html");
-        
-        init(); //does nothing atm
-    }
-    
-    public void init(){
-    	
     }
     
     //interface
